@@ -1,6 +1,6 @@
-let language = [
-    romanian = {
-        activity: [
+let language = {
+    romanian :{
+        activity:[
             'Chirurgia traumatica si cronica a membrelor',
             'Chirurgie plastica generala',
             'Chirurgie estetica',
@@ -28,8 +28,8 @@ let language = [
         nonsurgTherap: [
             'microneedling (Dermapen)',
             'rejuvenare faciala si  tratamentul leziunilor vasculare folosind laserul Fotona SP Dynamics'
-        ]       
+        ],       
     }
-]
+}
 
 export default language;
