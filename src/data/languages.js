@@ -1,8 +1,17 @@
-let language = {
-    romanian :{
-        activity:[
-            'Chirurgia traumatica si cronica a membrelor',
-            'Chirurgie plastica generala',
+let language = [
+    {
+      "rom": 
+       { "name": "rom",
+        "activity": [
+            {
+                "id": "traum",
+                "title": 'Chirurgia traumatica si cronica a membrelor',
+                
+            },
+            {
+                "id": "plst-gen",
+                "title":'Chirurgie plastica generala'
+            },
             'Chirurgie estetica',
             'Terapii nonchirurgicale (anti-ageing)'
         ],
@@ -28,8 +37,10 @@ let language = {
         nonsurgTherap: [
             'microneedling (Dermapen)',
             'rejuvenare faciala si  tratamentul leziunilor vasculare folosind laserul Fotona SP Dynamics'
-        ],       
+        ],
     }
 }
+
+]
 
 export default language;
