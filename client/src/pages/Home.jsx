@@ -1,9 +1,9 @@
 import React from 'react'
-import language from '../data/languages'
+import activities from '../data/activities'
 
 const Home = () => {
-    const activitity = language.romanian.activity
-    console.log(activitity)
+    const activity = activities.activities[0].activity
+    console.log("activitate: ",activity)
     return (
         <div>
             
