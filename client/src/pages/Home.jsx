@@ -1,21 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
-const Home = ({ titles }) => {
-  console.log("props: ",titles)
-  // const actTitles = titles[0].titles;
-  // console.log("activitate: ", actTitles);
+const Home = () => {
+  const [titles, setTitles] = useState([]);
+
+  useEffect(() => {
+    getTitles();
+  }, []);
+
+  const getTitles = async () => {
+    const res = await fetch("http://localhost:5000/titles");
+    const titles = await res.json();
+    setTitles([...titles]);
+  };
+  const actTitles = titles[0]?.titles;
+  console.log("titluri: ", actTitles);
   return (
-    <div className="links">
-      {/* {actTitles.map((item) => {
+    <div className="home-links">
+      {actTitles?.map((item) => {
         return (
-          <div key={item.id} >
+          <div key={item.id}
+          className="home-link">
             <p>{item.title}</p>
-            <img src={item.icon} alt="" className="logo"height="50px" width="50px" />
+            <Link to={`/${item.id}`}>
+              <img
+                src={item.icon}
+                alt=""
+                className="logo"
+                height="50px"
+                width="50px"
+              />
+            </Link>
           </div>
         );
-      })} */}
+      })}
+      <Outlet />
     </div>
   );
 };
