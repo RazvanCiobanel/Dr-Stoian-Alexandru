@@ -1,5 +1,5 @@
 import {
-  createStore,
+  legacy_createStore as createStore,
   applyMiddleware,
   compose,
 } from "redux";
@@ -32,5 +32,6 @@ const store = createStore(
 );
 
 const persistor = persistStore(store);
+console.log("store: ", store)
 
 export { store, persistor };

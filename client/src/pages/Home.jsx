@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
-
 import { Link, Outlet } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getTitlesR } from "../actions/actions";
 
 const Home = () => {
+
   const [titles, setTitles] = useState([]);
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    getTitles();
+    
+    dispatch(getTitlesR())
   }, []);
 
   const getTitles = async () => {
@@ -14,7 +18,8 @@ const Home = () => {
     const titles = await res.json();
     setTitles([...titles]);
   };
-  const actTitles = titles[0]?.titles;
+  const titlesR = useSelector(state =>state.titles.titles)
+  const actTitles = titlesR[0]?.titles;
   console.log("titluri: ", actTitles);
   return (
     <div className="home-links">
