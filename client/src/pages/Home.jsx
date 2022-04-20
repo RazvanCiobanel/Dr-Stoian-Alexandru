@@ -1,32 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Link, Outlet } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { getTitlesR } from "../actions/actions";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+  const titlesR = useSelector(
+    (state) => state.titles.titles
+  );
 
-  const [titles, setTitles] = useState([]);
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    
-    dispatch(getTitlesR())
-  }, []);
-
-  const getTitles = async () => {
-    const res = await fetch("http://localhost:5000/titles");
-    const titles = await res.json();
-    setTitles([...titles]);
-  };
-  const titlesR = useSelector(state =>state.titles.titles)
   const actTitles = titlesR[0]?.titles;
-  console.log("titluri: ", actTitles);
+  
   return (
     <div className="home-links">
       {actTitles?.map((item) => {
         return (
-          <div key={item.id}
-          className="home-link">
+          <div key={item.id} className="home-link">
             <p>{item.title}</p>
             <Link to={`/${item.id}`}>
               <img
@@ -40,7 +27,6 @@ const Home = () => {
           </div>
         );
       })}
-      <Outlet />
     </div>
   );
 };

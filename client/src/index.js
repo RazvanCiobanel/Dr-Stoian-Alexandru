@@ -11,7 +11,7 @@ import {
 import Home from "./pages/Home";
 import Specialization from "./pages/Specialization";
 import { Provider } from "react-redux";
-import { store, persistor } from "./store";
+import { store, persistor } from "./redux/store";
 import { PersistGate } from "redux-persist/integration/react";
 
 ReactDOM.render(
