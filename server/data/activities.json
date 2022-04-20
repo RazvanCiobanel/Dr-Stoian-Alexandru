@@ -11,6 +11,16 @@
                     "- chirurgia tendoanelor și oaselor: tenorafii, grefe tendinoase, transferuri tendinoase, fracturi falange si metacarpiene, tumori osoase la nivelul degetelor",
                     "- mână reumatismală, spastică, sechelară"
                 ]
+            },
+            {
+                "id": "eng",
+                "title": "Traumatic and chronic limb surgery",
+                "activities": [
+                    "- Excision of cutaneous tumor formations (pigmentary nevi, papilomas, carcinomas, melanoma, etc.), soft parts (synovial cysts, lipids, fibrome, sarcomas, etc.)",
+                    "- Peripheral nerve surgery: Compressive syndromes - Carpal, Guyon, Cubital, Tarsian, Peronier, etc; Peripheral nerve reconstruction - neurolyises, grafts and nerve transfers; nerve tumors",
+                    "- Surgery of tendons and bones: tenorages, tending grafts, tendonous transfers, phalange fractures and metacaries, bone tumors in fingers",
+                    "- Rheumatic, spastic, seizure"
+                ]
             }
         ]
     },
@@ -27,6 +37,17 @@
                     "- acoperirea defectelor folosind o gamă largă de procedee: grefe de piele, lambouri locale/regionale/liber transferate",
                     "- tratamentul arsurilor: acut și sechele"
                 ]
+            },
+            {
+                "id": "eng",
+                "title": "General plastic surgery",
+                "activities": [
+                    "- the excision of cutaneous tumor formations and soft parts (chiste sebaceous, lipids, sarcomas, etc.)",
+                    "- scar excision",
+                    "- Treatment of diabetic foot and esters",
+                    "- Coverage of defects using a wide range of processes: leather grafts, local / regional / free transferred lambs",
+                    "- Treatment of burns: acute and sequelae"
+                ]
             }
         ]
     },
@@ -41,6 +62,15 @@
                     "- chirurgia remodelării corporale",
                     "- față: blefaroplastie, urechi decolate"
                 ]
+            },
+            {
+                "id": "eng",
+                "title": "Aesthetic surgery",
+                "activities": [
+                    "- Breast surgery",
+                    "- Body remodeling surgery",
+                    "- Front: Blepharoplasty, ears taken"
+                ]
             }
         ]
     },
@@ -53,6 +83,14 @@
                 "activities": [
                     "- microneedling (Dermapen)",
                     "- rejuvenare faciala si  tratamentul leziunilor vasculare folosind laserul Fotona SP Dynamics"
+                ]
+            },
+            {
+                "id": "eng",
+                "title": "Non-surgical therapies (anti-aging)",
+                "activities": [
+                    "- microneedling (Dermapen)",
+                    "- facial rejuvenation and treatment of vascular lesions using the Fotona SP Dynamics laser"
                 ]
             }
         ]

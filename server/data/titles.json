@@ -19,7 +19,32 @@
       },
       {
         "id": "nonchir",
-        "title": "Terapii nonchirurgicale (anti-ageing)",
+        "title": "Terapii nechirurgicale (anti-aging)",
+        "icon": "https://i.postimg.cc/SxxNVRzP/history2.png"
+      }
+    ]
+  },
+  {
+    "language": "eng",
+    "titles": [
+      {
+        "id": "traumatica",
+        "title": "Traumatic and chronic limb surgery",
+        "icon": "https://i.postimg.cc/DwgyPFNZ/arm.png"
+      },
+      {
+        "id": "plastica",
+        "title": "General plastic surgery",
+        "icon": "https://i.postimg.cc/FKY5k45w/scalpel.png"
+      },
+      {
+        "id": "estetica",
+        "title": "Aesthetic surgery",
+        "icon": "https://i.postimg.cc/7LhD1z7s/beauty.png"
+      },
+      {
+        "id": "nonchir",
+        "title": "Non-surgical therapies (anti-aging)",
         "icon": "https://i.postimg.cc/SxxNVRzP/history2.png"
       }
     ]
