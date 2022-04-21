@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { setTitles } from "../redux/slices/titlesSlice";
 
 const Home = () => {
-  const titlesR = useSelector(
-    (state) => state.titles.titles
-  );
+  const titlesR = useSelector(setTitles);
 
-  const actTitles = titlesR[0]?.titles;
+  const actTitles = titlesR.titles;
   
   return (
     <div className="home-links">

@@ -1,6 +1,11 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
-const Header = () => {
+
+
+const Navbar = () => {
     return (
         <header>
             <nav>
@@ -13,4 +18,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Navbar

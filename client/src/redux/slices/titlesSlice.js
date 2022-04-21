@@ -5,8 +5,8 @@ import {
 
 export const getTitles = createAsyncThunk(
   "titles/getTitles",
-  async () => {
-    const res = await fetch("http://localhost:5000/titles");
+  async (language) => {
+    const res = await fetch(`http://localhost:5000/titles/${language}`);
     const titles = await res.json();
     return titles;
   }
@@ -31,5 +31,7 @@ const titlesSlice = createSlice({
         }
     }
 })
+
+export const setTitles = state => state.titles.titles
 
 export default titlesSlice.reducer

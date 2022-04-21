@@ -1,14 +1,14 @@
 const express = require("express");
-const titles = require("../data/titles.json");
+const certifications = require("../data/certifications.json");
 
 const router = express.Router();
 
 router.get("/:language", (req, res) => {
   const { language } = req.params;
-  const title = titles.find(
+  const certification = certifications.find(
     (item) => item.language === language
   );
-  res.send(title);
+  res.send(certification);
 });
 
 module.exports = router;

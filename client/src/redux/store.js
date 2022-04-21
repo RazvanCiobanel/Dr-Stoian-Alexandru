@@ -12,9 +12,11 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import titlesReducer from "./slices/titlesSlice";
+import languageReducer from './slices/languageSlice'
 
 const rootReducer = combineReducers({
   titles: titlesReducer,
+  language: languageReducer,
 });
 
 const persistConfig = {

@@ -5,47 +5,55 @@
       {
         "id": "traumatica",
         "title": "Chirurgia traumatică și cronică a membrelor",
-        "icon": "https://i.postimg.cc/DwgyPFNZ/arm.png"
+        "icon": "https://i.postimg.cc/DwgyPFNZ/arm.png",
+        "link": "Traumatică"
       },
       {
         "id": "plastica",
         "title": "Chirurgie plastică generală",
-        "icon": "https://i.postimg.cc/FKY5k45w/scalpel.png"
+        "icon": "https://i.postimg.cc/FKY5k45w/scalpel.png",
+        "link": "Plastică"
       },
       {
         "id": "estetica",
         "title": "Chirurgie estetică",
-        "icon": "https://i.postimg.cc/7LhD1z7s/beauty.png"
+        "icon": "https://i.postimg.cc/7LhD1z7s/beauty.png",
+        "link": "Estetică"
       },
       {
         "id": "nonchir",
         "title": "Terapii nechirurgicale (anti-aging)",
-        "icon": "https://i.postimg.cc/SxxNVRzP/history2.png"
+        "icon": "https://i.postimg.cc/SxxNVRzP/history2.png",
+        "link": "Terapii nechirurgicale"
       }
     ]
   },
   {
-    "language": "eng",
+    "language": "en",
     "titles": [
       {
         "id": "traumatica",
         "title": "Traumatic and chronic limb surgery",
-        "icon": "https://i.postimg.cc/DwgyPFNZ/arm.png"
+        "icon": "https://i.postimg.cc/DwgyPFNZ/arm.png",
+        "link": "Traumatic"
       },
       {
         "id": "plastica",
         "title": "General plastic surgery",
-        "icon": "https://i.postimg.cc/FKY5k45w/scalpel.png"
+        "icon": "https://i.postimg.cc/FKY5k45w/scalpel.png",
+        "link": "Plastic"
       },
       {
         "id": "estetica",
         "title": "Aesthetic surgery",
-        "icon": "https://i.postimg.cc/7LhD1z7s/beauty.png"
+        "icon": "https://i.postimg.cc/7LhD1z7s/beauty.png",
+        "link": "Aesthetic"
       },
       {
         "id": "nonchir",
         "title": "Non-surgical therapies (anti-aging)",
-        "icon": "https://i.postimg.cc/SxxNVRzP/history2.png"
+        "icon": "https://i.postimg.cc/SxxNVRzP/history2.png",
+        "link": "Non-surgical therapies"
       }
     ]
   }
