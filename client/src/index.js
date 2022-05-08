@@ -9,7 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import Specialization from "./pages/Specialization";
+import Specialisation from "./pages/Specialisation";
 import { Provider } from "react-redux";
 import { store, persistor } from "./redux/store";
 import { PersistGate } from "redux-persist/integration/react";
@@ -25,7 +25,7 @@ ReactDOM.render(
               <Route
                 path=":id"
                 exact
-                element={<Specialization />}
+                element={<Specialisation />}
               />
             </Route>
           </Routes>

@@ -32,6 +32,6 @@ const titlesSlice = createSlice({
     }
 })
 
-export const setTitles = state => state.titles.titles
+export const selectTitles = state => state.titles.titles
 
 export default titlesSlice.reducer

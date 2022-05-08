@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "./App.css";
 import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
@@ -9,10 +10,12 @@ import { selectLanguage } from "./redux/slices/languageSlice";
 
 function App() {
   const dispatch = useDispatch();
-  const language = useSelector(selectLanguage)
+  const language = useSelector(selectLanguage);
 
+ 
   useEffect(() => {
-    dispatch(getTitles(language));
+    dispatch(getTitles(language))
+    ;
   }, [language]);
 
   return (
