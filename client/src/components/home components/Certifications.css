@@ -1,0 +1,11 @@
+.certifications {
+  margin: 5px;
+}
+
+.certifications__list {
+  list-style: none;
+}
+
+.list__item {
+  padding: 3px 0;
+}

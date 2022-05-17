@@ -1,3 +1,11 @@
+.specialisation{
+    margin: 20px auto;
+}
+
+.specialisation__body{
+    margin: 50px 5px;
+}
+
 .specialisation__list {
     list-style: none;
 }

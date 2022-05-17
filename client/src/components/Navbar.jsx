@@ -10,7 +10,9 @@ import { selectLanguage } from "../redux/slices/languageSlice";
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  padding: 10px;
+  padding: 2px;
+  display: inline-block;
+  margin-bottom: 5px;
   color: black;
 
   &:focus,
@@ -26,7 +28,9 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const handleLanguage = (e) => {
-    dispatch(changeLanguage(e.target.nearestViewportElement.id));
+    dispatch(
+      changeLanguage(e.target.nearestViewportElement.id)
+    );
   };
 
   const displayFlag = (language) => {
@@ -53,15 +57,21 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <ul className="navbar__links">
-        <StyledLink to="/">Home</StyledLink>
-        {titles &&
-          titles.titles?.map((item) => (
-            <StyledLink key={item.id} to={`/${item.id}`}>
-              {item.link}
-            </StyledLink>
-          ))}
-      </ul>
+      <div className="navbar__links">
+        <ul className="navbar__ul">
+          <li>
+          <StyledLink to="/">Home</StyledLink>
+          </li>
+          {titles &&
+            titles.titles?.map((item) => (
+              <li key={item.id}>
+              <StyledLink  to={`/${item.id}`}>
+                {item.link}
+              </StyledLink>
+              </li>
+            ))}
+        </ul>
+      </div>
       <div className="navbar__flag">
         {displayFlag(language)}
       </div>

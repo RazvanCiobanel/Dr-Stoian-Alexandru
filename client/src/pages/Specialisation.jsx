@@ -25,16 +25,16 @@ function Specialisation() {
   }, [pageId, language]);
 
   return (
-    <div>
+    <div className="specialisation">
       {specialisation && (
-        <>
+        <div className="specialisation__body">
           <p>{specialisation.title}</p>
           <ul className="specialisation__list">
             {specialisation.activities.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
-        </>
+        </div>
       )}
     </div>
   );

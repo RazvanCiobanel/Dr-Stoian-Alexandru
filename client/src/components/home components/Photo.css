@@ -1,0 +1,6 @@
+.photo {
+  margin: 55px auto 5px;
+  width: auto;
+  height: 50vh;
+  object-fit: contain;
+}

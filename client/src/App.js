@@ -22,8 +22,9 @@ function App() {
     <>
       <div className="App">
         <Navbar />
+        <Outlet />
       </div>
-      <Outlet />
+      
       <Footer />
     </>
   );
