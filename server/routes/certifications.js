@@ -1,14 +1,17 @@
 const express = require("express");
-const certifications = require("../data/certifications.json");
+const dbo = require("../db/conn");
 
 const router = express.Router();
 
 router.get("/:language", (req, res) => {
+  let db_connect = dbo.getDb();
   const { language } = req.params;
-  const certification = certifications.find(
-    (item) => item.language === language
-  );
-  res.send(certification);
+  db_connect
+    .collection("certifications")
+    .findOne({ language: language }, (err, result) => {
+      if (err) throw err;
+      res.json(result);
+    });
 });
 
 module.exports = router;

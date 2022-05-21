@@ -1,15 +1,20 @@
 const express = require("express");
-const activities = require("../data/activities.json");
+const dbo = require("../db/conn");
 
 const router = express.Router();
 
 router.get("/:id&:language", (req, res) => {
-  const id  = req.params.id;
-  const language  = req.params.language;
-  const activity = activities.find(
-    (item) => item.id === id && item.language === language
-  );
-  res.send(activity);
+  let db_connect = dbo.getDb();
+  const { id, language } = req.params;
+  db_connect
+    .collection("activities")
+    .findOne(
+      { id: id, language: language },
+      (err, result) => {
+        if (err) throw err;
+        res.json(result);
+      }
+    );
 });
 
 module.exports = router;

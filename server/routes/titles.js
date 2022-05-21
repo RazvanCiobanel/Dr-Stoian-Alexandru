@@ -1,14 +1,17 @@
 const express = require("express");
-const titles = require("../data/titles.json");
+const dbo = require("../db/conn");
 
 const router = express.Router();
 
 router.get("/:language", (req, res) => {
+  let db_connect = dbo.getDb();
   const { language } = req.params;
-  const title = titles.find(
-    (item) => item.language === language
-  );
-  res.send(title);
+  db_connect
+    .collection("titles")
+    .findOne({ language: language }, (err, result) => {
+      if (err) throw err;
+      res.json(result);
+    });
 });
 
 module.exports = router;
