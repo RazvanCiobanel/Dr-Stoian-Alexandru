@@ -20,6 +20,11 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     color: black;
   }
+
+  @media all and (min-width: 768px) {
+    padding: 2px 10px;
+  }
+  
 `;
 
 const Navbar = () => {

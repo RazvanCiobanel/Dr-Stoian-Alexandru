@@ -23,7 +23,7 @@ function Certifications() {
     <div className="certifications">
       {certifications && (
         <>
-          <p>{certifications?.title}:</p>
+          <p className="certifications__title">{certifications?.title}:</p>
           <ul className="certifications__list">
             {certifications.cert.map((item) => (
               <li className="list__item" key={item}>

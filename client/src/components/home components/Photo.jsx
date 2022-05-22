@@ -5,7 +5,7 @@ import photo from "../../user.jpg"
 function Photo () {
 
   return (
-    <div>
+    <div className='home__photo'>
         <img className='photo' src={photo} alt="John Doe" />
     </div>
   )
