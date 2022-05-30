@@ -1,4 +1,4 @@
-# MERN Stack web apllication
+# MERN Stack web application
 
 ## Description
 It simulates a presentation website.<br>
