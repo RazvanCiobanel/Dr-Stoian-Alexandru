@@ -1,10 +1,10 @@
-const express = require("express");
-const dbo = require("../db/conn");
+import { Router } from "express";
+import { getDb } from "../db/conn.js";
 
-const router = express.Router();
+const router = Router();
 
 router.get("/:language", (req, res) => {
-  let db_connect = dbo.getDb();
+  let db_connect = getDb();
   const { language } = req.params;
   db_connect
     .collection("certifications")
@@ -14,4 +14,4 @@ router.get("/:language", (req, res) => {
     });
 });
 
-module.exports = router;
+export default router;
